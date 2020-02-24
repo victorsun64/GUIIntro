@@ -12,10 +12,12 @@ import org.eclipse.swt.widgets.ExpandBar;
 import org.eclipse.swt.widgets.Button;
 import org.eclipse.swt.events.SelectionAdapter;
 import org.eclipse.swt.events.SelectionEvent;
+import org.eclipse.swt.widgets.Text;
 
 public class MyFirstWindow {
 
 	protected Shell shell;
+	private Text text;
 
 	/**
 	 * Launch the application.
@@ -58,11 +60,19 @@ public class MyFirstWindow {
 		btnMyknopf.addSelectionListener(new SelectionAdapter() {
 			@Override
 			public void widgetSelected(SelectionEvent e) {
-				System.out.println("Knopf wurde gedrückt!!!");
+				// System.out.println("Knopf wurde gedrückt!!!");
+				System.out.println(getText().getText());
 			}
 		});
 		btnMyknopf.setBounds(64, 98, 75, 25);
 		btnMyknopf.setText("MyKnopf");
 
+		text = new Text(shell, SWT.BORDER);
+		text.setBounds(195, 125, 76, 21);
+
+	}
+
+	public Text getText() {
+		return text;
 	}
 }
