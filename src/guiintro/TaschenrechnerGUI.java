@@ -106,7 +106,7 @@ public class TaschenrechnerGUI {
 		return texttf;
 	}
 	public Text getErgebnís() {
-		return Ergebnístf;
+		return ergebnistf;
 	}
 	
 }
