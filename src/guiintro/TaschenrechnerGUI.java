@@ -113,7 +113,7 @@ public class TaschenrechnerGUI {
 				int ergebnis = Integer.parseInt(getErgebnis().getText());
 				int wert = Integer.parseInt(getZahl().getText());
 				//
-				ergebnis = ergebnis * wert;
+				ergebnis = ergebnis / wert;
 				//
 				getErgebnis().setText(Integer.toString(ergebnis));
 				getZahl().setText("");
